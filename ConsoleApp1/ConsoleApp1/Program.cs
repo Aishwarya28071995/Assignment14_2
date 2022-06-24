@@ -10,7 +10,7 @@ namespace ConsoleApp1
             stack.Push(70);
             stack.Push(30);
             stack.Push(56);
-            /*int element = stack.peek();
+            int element = stack.peek();
             Console.WriteLine("Peeked element is "+element);
             int popedElement = stack.Pop();
             Console.WriteLine("Popped elemment is " + popedElement);
@@ -21,7 +21,7 @@ namespace ConsoleApp1
             int element2 = stack.peek();
             Console.WriteLine("Peeked element is " + element2);
             int popedElement2 = stack.Pop();
-            Console.WriteLine("Popped elemment is " + popedElement2);*/
+            Console.WriteLine("Popped elemment is " + popedElement2);
             stack.Display();
         }
     }

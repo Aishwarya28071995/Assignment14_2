@@ -56,7 +56,7 @@ namespace ConsoleApp1
             }
         }
 
-       /* public int peek()
+       public int peek()
         {
             if (head == null)
                 throw new NullReferenceException("empty List");
@@ -68,9 +68,9 @@ namespace ConsoleApp1
             }
             int obj = t.data;
             return obj;
-        }*/
+        }
 
-       /* public int Pop()
+        public int Pop()
         {
             if (head == null)
             {
@@ -85,6 +85,6 @@ namespace ConsoleApp1
            int obj = t.data;
             p.next = null;
             return obj;
-        }*/
+        }
     }
 }
