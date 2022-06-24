@@ -7,9 +7,9 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Stack stack = new Stack();
-            stack.Push(70);
-            stack.Push(30);
             stack.Push(56);
+            stack.Push(30);
+            stack.Push(70);
             /*int element = stack.peek();
             Console.WriteLine("Peeked element is "+element);
             int popedElement = stack.Pop();
