@@ -30,13 +30,35 @@ namespace ConsoleApp1
         {
             Node node = new Node(data);
 
-            if (node == null)
+            if (head == null)
             {
                 head = node;
                 return true;
             }
             node.next = head;
             head = node;
+            return true;
+
+        }
+
+        public bool Append(int data)
+        {
+            Node node = new Node(data);
+
+            if (head == null)
+            {
+                head = node;
+                return true;
+            }
+
+            Node t =head;
+
+            while(t.next!=null)
+            {
+                t = t.next;
+            }
+            t.next = node;
+           
             return true;
 
         }
@@ -61,12 +83,9 @@ namespace ConsoleApp1
             if (head == null)
                 throw new NullReferenceException("empty List");
             Node t = head, p = head;
-            while (t.next != null)
-            {
-                p = t;
-                t = t.next;
-            }
+           
             int obj = t.data;
+
             return obj;
         }
 
@@ -77,13 +96,10 @@ namespace ConsoleApp1
                 throw new NullReferenceException("List is Empty");
             }
             Node t = head, p = head;
-            while (t.next != null)
-            {
-                p = t;
-                t = t.next;
-            }
+            p= t.next;
+            head = p;
            int obj = t.data;
-            p.next = null;
+            t = null;
             return obj;
         }
     }
